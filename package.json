@@ -1,10 +1,10 @@
 {
-  "name": "universal-bug",
+  "name": "universal-dynamic-ssr-lazy-load-example",
   "version": "0.0.0",
   "scripts": {
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server.js",
-    "build:client-and-server-bundles": "ng build --prod && ng run universal-bug:server",
+    "build:client-and-server-bundles": "ng build --prod && ng run universal-dynamic-ssr-lazy-load-example:server --configuration=production",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
   "private": true,
